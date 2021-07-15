@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 
-function CreateUserForm() {
+function CreateSignUpForm() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
@@ -44,4 +44,4 @@ function CreateUserForm() {
     );
 }
 
-export default CreateUserForm;
+export default CreateSignUpForm;
