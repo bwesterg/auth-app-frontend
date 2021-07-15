@@ -1,6 +1,7 @@
 
 import './App.css';
-import CreateUserForm from './CreateUserForm';
+import SignUpForm from './SignUpForm';
+import LoginForm from './LoginForm'
 
 
 function App() {
@@ -8,8 +9,10 @@ function App() {
   return (
     <div className="App">
       <h1>Auth App</h1>
-      <h2>Create User</h2>
-      <CreateUserForm />
+      <h2>Sign Up</h2>
+      <SignUpForm />
+      <h2>Login</h2>
+      <LoginForm />
     </div>
   );
 }
