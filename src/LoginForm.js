@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function LoginForm() {
+function LoginForm(props) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
@@ -21,6 +21,7 @@ function LoginForm() {
                 console.error(result.error);
             } else {
                 localStorage.setItem('token', result.token);
+                props.handleLogin();
             }
         });
     }
