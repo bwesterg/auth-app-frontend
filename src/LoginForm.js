@@ -20,7 +20,7 @@ function LoginForm() {
             if(result.error) {
                 console.error(result.error);
             } else {
-                localStorage.setItem('token', result.token)
+                localStorage.setItem('token', result.token);
             }
         });
     }

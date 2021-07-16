@@ -1,7 +1,8 @@
 
 import './App.css';
 import SignUpForm from './SignUpForm';
-import LoginForm from './LoginForm'
+import LoginForm from './LoginForm';
+import ProtectedUsersButton from './ProtectedUsersButton';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <SignUpForm />
       <h2>Login</h2>
       <LoginForm />
+      <ProtectedUsersButton />
     </div>
   );
 }
