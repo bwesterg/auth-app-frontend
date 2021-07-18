@@ -32,6 +32,8 @@ function CreateSignUpForm() {
                 placeholder="username"
                 value={username}
                 onChange={(event) => setUsername(event.target.value)}
+                className="username"
+
             />
             <input 
                 type="password" 
@@ -39,9 +41,13 @@ function CreateSignUpForm() {
                 placeholder="password"
                 value={password}
                 onChange={(event) => setPassword(event.target.value)}
-                className="signup-submit"
+                className="password"
             />
-            <input type="submit" value="create user" />
+            <input 
+                type="submit" 
+                value="create user" 
+                className="submit" 
+            />
         </form>
     );
 }

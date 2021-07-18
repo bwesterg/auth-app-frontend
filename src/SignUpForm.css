@@ -1,4 +1,17 @@
-.signup-submit {
+.password {
     max-width: 400px;
     margin: 1rem;
+    box-shadow: 0 2px 2px hsl(0, 0%, 75%);
+}
+
+.username {
+    max-width: 400px;
+    margin: 1rem;
+    box-shadow: 0 2px 2px hsl(0, 0%, 75%);
+}
+
+.submit {
+    max-width: 400px;
+    margin: 1rem;
+    box-shadow: 0 2px 2px hsl(0, 0%, 75%);
 }
