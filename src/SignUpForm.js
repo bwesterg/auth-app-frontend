@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './SignUpForm.css'
 
 
 function CreateSignUpForm() {
@@ -38,6 +39,7 @@ function CreateSignUpForm() {
                 placeholder="password"
                 value={password}
                 onChange={(event) => setPassword(event.target.value)}
+                className="signup-submit"
             />
             <input type="submit" value="create user" />
         </form>

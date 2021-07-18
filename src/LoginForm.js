@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './LoginForm.css'
 
 function LoginForm(props) {
     const [username, setUsername] = useState('');
@@ -27,7 +28,7 @@ function LoginForm(props) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="login-form" onSubmit={handleSubmit}>
             <input 
                 type="text" 
                 name="username"
@@ -41,8 +42,9 @@ function LoginForm(props) {
                 placeholder="password"
                 value={password}
                 onChange={event =>setPassword(event.target.value)}
+                className="login-submit"
             />
-            <input type="submit" value="login" />
+            <input type="submit" value="login" className="login-submit" />
         </form>
     )
 }
